@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هول ان ون</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+
+    
+        <button id="about"><a href="صفحة الحجوزات.html">الحجوزات</a></button>
+        <button h"><a href= "index.html">الصفحة الرئيسية </a></button> 
+        <button id="contact">  <a href="صفحة الاتصال.html">الاتصال</a>   </button>
+   
+         <style>
+            * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4c6b8;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+}
+
+aside {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+         </style>
+    <header>
+        <h1>موقع ويب</h1>
+        <input type="text" placeholder="https://">
+    </header>
+    <main>
+        <section class="container">
+            <div class="box" id="box1">
+                  <img src="bedroom-6577523_1280.jpg"20%" height="10%"    >
+                <h2>متجر المحترفين</h2>
+            </div>
+            <div class="box" id="box2">
+                <img src="food-4773380_1280.jpg"alt="width="20%" height="10%"    >
+                <h2>المطاعم والمقاهي</h2>
+            </div>
+            <div class="box" id="box3">
+                <img src="bedroom-6577523_1280.jpg"alt="width="20%" height="10%"    >
+
+                <h2>خدمة الإقامة بالفندق</h2>
+            </div>
+        </section>
+        <aside>
+            <h3>أنشطة أخرى</h3>
+            <img src="book-6957870_1280.jpg"alt="width="15%" height="10%"    >
+
+            <select id="faq">
+                <option>ساحة تدريب بمصاداة بالألوان الثنائية</option>
+                <option>دروس الحرف</option>
+                <option>التدريب الفني</option>
+                <option>خدمة المساعدة على حمل أدوات الحل</option>
+            </select>
+        </aside>
+    </main>
+    <script src="script.js">
+        document.getElementById("faq").addEventListener("change", function() {
+    alert("لقد اخترت: " + this.value);
+});
+    </script>
+</body>
+</html>

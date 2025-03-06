@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هول ان ون</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <button h"><a href= "index.html">الصفحة الرئيسية </a></button> 
+        <button id="about"><a href="صفحة الحجوزات.html">الحجوزات</a></button>
+        <button id="contact">  <a href="صفحة الاتصال.html">الاتصال</a>   </button>
+  
+     <style>
+        body {
+    background-color: #f4a460; /* لون الخلفية */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+     </style>
+    <div class="container">
+        <h1>هول ان ون</h1>
+        <input type="text" placeholder="أدخل الرابط الإلكتروني" id="urlInput">
+        <input type="text" placeholder="أدخل اسم "studentName">
+        <button onclick="submitForm()">إرسال</button>
+    </div>
+    <script src="script.js">
+        function submitForm() {
+    const url = document.getElementById('urlInput').value;
+    const studentName = document.getElementById('studentName').value;
+    const fileInput = document.getElementById('fileInput').files;
+
+    // يمكنك إضافة منطق لتحميل الملف هنا
+    alert(`تم إرسال المعلومات:\nالرابط: ${url}\nاسم الطالب: ${studentName}`);
+}
+    </script>
+</body>
+</html>
